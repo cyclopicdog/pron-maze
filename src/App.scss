@@ -1,0 +1,86 @@
+$border-style: 0.2em solid black;
+$start-border-style: 0.5em solid black;
+$player-border-style: 0.2em solid rgba(255, 0, 0, 0.5);
+$wall-color: lightgray;
+$counter-percent: 0.1;
+
+.board {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 5% 18% 18% 18% 18% 18% 5%;
+    grid-template-rows: 5% 18% 18% 18% 18% 18% 5%;
+
+    &__tile {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 33% 33% 33%;
+        gap: 1%;
+    }
+    &__empty-ninth {
+        &--top-left {
+            background-image: linear-gradient(150deg, $wall-color, white 70%);
+            border-left: $border-style;
+            border-top: $border-style;
+            border-radius: 25%;
+        }
+        &--top-right {
+            background-image: linear-gradient(210deg, $wall-color, white 70%);
+            border-right: $border-style;
+            border-top: $border-style;
+            border-radius: 25%;
+        }
+        &--bottom-left {
+            background-image: linear-gradient(30deg, $wall-color, white 70%);
+            border-left: $border-style;
+            border-bottom: $border-style;
+            border-radius: 25%;
+        }
+        &--bottom-right {
+            background-image: linear-gradient(330deg, $wall-color, white 70%);
+            border-right: $border-style;
+            border-bottom: $border-style;
+            border-radius: 25%;
+        }
+    }
+    &__phrase {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        font-size: 1.2em;
+        font-weight: 900;
+        text-align: center;
+    }
+    &__other-tile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 900;
+        &--start {
+            border-bottom: $start-border-style;
+            border-left: $start-border-style;
+            border-right: $start-border-style;
+            border-radius: 25%;
+            font-size: 2em;
+        }
+        &--exit {
+            font-size: 1.2em;
+        }
+    }
+}
+
+.player {
+    width: calc(100vw * $counter-percent);
+    height: calc(100vw * $counter-percent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 43%;
+    left: 45%;
+    border: $player-border-style;
+    border-radius: 50%;
+    font-size: 4em;
+    color: rgba(255, 0, 0, 0.5);
+}

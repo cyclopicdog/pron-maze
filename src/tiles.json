@@ -1,0 +1,247 @@
+[
+    {
+        "type": "exit",
+        "phrase": "",
+        "correct": ""
+    },
+    {
+        "type": "exit",
+        "phrase": "A",
+        "correct": "A"
+    },
+    {
+        "type": "exit",
+        "phrase": "B",
+        "correct": "B"
+    },
+    {
+        "type": "exit",
+        "phrase": "C",
+        "correct": "C"
+    },
+    {
+        "type": "exit",
+        "phrase": "D",
+        "correct": "D"
+    },
+    {
+        "type": "exit",
+        "phrase": "E",
+        "correct": "E"
+    },
+    {
+        "type": "exit",
+        "phrase": "",
+        "correct": ""
+    },
+    {
+        "type": "exit",
+        "phrase": "T",
+        "correct": "//"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Two_or three",
+        "correct": "/w/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Three_and a half",
+        "correct": "/j/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Draw_a line",
+        "correct": "/r/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "We saw_a film",
+        "correct": "/r/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "A queue_of people",
+        "correct": "/w/"
+    },
+    {
+        "type": "exit",
+        "phrase": "F",
+        "correct": "F"
+    },
+    {
+        "type": "exit",
+        "phrase": "S",
+        "correct": "S"
+    },
+    {
+        "type": "phrase",
+        "phrase": "We_aren't ready",
+        "correct": "/j/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Tea_or coffee?",
+        "correct": "/j/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Hello_everyone",
+        "correct": "/w/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "I_agree",
+        "correct": "/j/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Where_are you?",
+        "correct": "/r/"
+    },
+    {
+        "type": "exit",
+        "phrase": "G",
+        "correct": "G"
+    },
+    {
+        "type": "exit",
+        "phrase": "R",
+        "correct": "R"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Go_ahead",
+        "correct": "/w/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "True_or false?",
+        "correct": "/w/"
+    },
+    {
+        "type": "start",
+        "phrase": "Start",
+        "correct": "up"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Never_again",
+        "correct": "/r/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Blue_eyes",
+        "correct": "/w/"
+    },
+    {
+        "type": "exit",
+        "phrase": "H",
+        "correct": "H"
+    },
+    {
+        "type": "exit",
+        "phrase": "Q",
+        "correct": "Q"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Score_a goal",
+        "correct": "/r/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Answer_a question",
+        "correct": "/r/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Give me_a ring",
+        "correct": "/j/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Try_again",
+        "correct": "/j/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Go to_England",
+        "correct": "/w/"
+    },
+    {
+        "type": "exit",
+        "phrase": "I",
+        "correct": "I"
+    },
+    {
+        "type": "exit",
+        "phrase": "P",
+        "correct": "P"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Day_and night",
+        "correct": "/j/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "She_arrived",
+        "correct": "/j/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Four_and a half",
+        "correct": "/r/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "A few_apples",
+        "correct": "/w/"
+    },
+    {
+        "type": "phrase",
+        "phrase": "Law_and order",
+        "correct": "/r/"
+    },
+    {
+        "type": "exit",
+        "phrase": "J",
+        "correct": "J"
+    },
+    {
+        "type": "exit",
+        "phrase": "",
+        "correct": ""
+    },
+    {
+        "type": "exit",
+        "phrase": "O",
+        "correct": "O"
+    },
+    {
+        "type": "exit",
+        "phrase": "N",
+        "correct": "N"
+    },
+    {
+        "type": "exit",
+        "phrase": "M",
+        "correct": "M"
+    },
+    {
+        "type": "exit",
+        "phrase": "L",
+        "correct": "L"
+    },
+    {
+        "type": "exit",
+        "phrase": "K",
+        "correct": "K"
+    },
+    {
+        "type": "exit",
+        "phrase": "",
+        "correct": ""
+    }
+]
