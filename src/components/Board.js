@@ -8,6 +8,7 @@ export default function Board({
     arrow,
     counterX,
     counterY,
+    path,
     errors,
     errorToggle,
 }) {
@@ -24,6 +25,7 @@ export default function Board({
                         tileNo={i}
                         counterX={counterX}
                         counterY={counterY}
+                        path={path}
                         errors={errors}
                         errorToggle={errorToggle}
                     />

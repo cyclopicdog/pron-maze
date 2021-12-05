@@ -131,35 +131,37 @@ function App() {
     }, [arrowTop, arrowLeft]);
 
     const checkPath = () => {
-        console.log('path:', path);
-        let checkedErrors = [];
-        path.map((step) => {
-            tiles.map((tile) => {
-                if (
-                    step.x === tile.x &&
-                    step.y === tile.y &&
-                    step.chosen !== tile.correct
-                ) {
-                    const newCheckedErrors = [
-                        ...checkedErrors,
-                        {
-                            x: step.x,
-                            y: step.y,
-                            correct: tile.correct,
-                            chosen: step.chosen,
-                        },
-                    ];
-                    checkedErrors = newCheckedErrors;
-                }
+        // console.log('path:', path);
+        if (errorToggle === 'off') {
+            let checkedErrors = [];
+            path.map((step) => {
+                tiles.map((tile) => {
+                    if (
+                        step.x === tile.x &&
+                        step.y === tile.y &&
+                        step.chosen !== tile.correct
+                    ) {
+                        const newCheckedErrors = [
+                            ...checkedErrors,
+                            {
+                                x: step.x,
+                                y: step.y,
+                                correct: tile.correct,
+                                chosen: step.chosen,
+                            },
+                        ];
+                        checkedErrors = newCheckedErrors;
+                    }
+                });
             });
-        });
-        setErrors(checkedErrors);
+            setErrors(checkedErrors);
+            setErrorToggle('on');
+        } else {
+            setErrorToggle('off');
+        }
     };
 
-    useEffect(() => {
-        checkPath();
-    }, [errorToggle]);
-
+    console.log('App errorToggle:', errorToggle);
     console.log('errors:', errors);
 
     return (
@@ -170,6 +172,7 @@ function App() {
                 arrow={arrow}
                 counterX={counterX}
                 counterY={counterY}
+                path={path}
                 errors={errors}
                 errorToggle={errorToggle}
             />
@@ -182,14 +185,7 @@ function App() {
                     down={down}
                 />
                 <Instructions />
-                <button
-                    className="sidebar__button"
-                    onClick={() =>
-                        errorToggle === 'off'
-                            ? setErrorToggle('on')
-                            : setErrorToggle('off')
-                    }
-                >
+                <button className="sidebar__button" onClick={checkPath}>
                     show mistakes
                 </button>
             </div>

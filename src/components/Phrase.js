@@ -5,6 +5,7 @@ export default function Phrase({
     tileNo,
     counterX,
     counterY,
+    path,
     errors,
     errorToggle,
 }) {
@@ -19,18 +20,28 @@ export default function Phrase({
         backgroundColor();
     }, [counterX, counterY]);
 
-    const showError = () =>
-        errors.map((error) => {
-            const thisTile = document.getElementById(`${tileNo}`);
-            if (error.x === tile.x && error.y === tile.y) {
-                thisTile.classList.remove('board__visited');
-                thisTile.classList.add('board__error');
-            }
-        });
+    const showError = () => {
+        const thisTile = document.getElementById(`${tileNo}`);
+        errorToggle === 'on'
+            ? errors.map((error) => {
+                  if (error.x === tile.x && error.y === tile.y) {
+                      thisTile.classList.remove('board__visited');
+                      thisTile.classList.add('board__error');
+                  }
+              })
+            : path.map((step) => {
+                  if (step.x === tile.x && step.y === tile.y) {
+                      thisTile.classList.remove('board__error');
+                      thisTile.classList.add('board__visited');
+                  }
+              });
+    };
 
     useEffect(() => {
         showError();
     }, [errorToggle]);
+
+    console.log('Phrase errorToggle:', errorToggle);
 
     return (
         <div className="board__tile" id={tileNo}>
