@@ -11,35 +11,35 @@
         "y": 6,
         "type": "exit",
         "phrase": "A",
-        "correct": "A"
+        "correct": "no"
     },
     {
         "x": 2,
         "y": 6,
         "type": "exit",
         "phrase": "B",
-        "correct": "B"
+        "correct": "no"
     },
     {
         "x": 3,
         "y": 6,
         "type": "exit",
         "phrase": "C",
-        "correct": "C"
+        "correct": "no"
     },
     {
         "x": 4,
         "y": 6,
         "type": "exit",
         "phrase": "D",
-        "correct": "D"
+        "correct": "no"
     },
     {
         "x": 5,
         "y": 6,
         "type": "exit",
         "phrase": "E",
-        "correct": "E"
+        "correct": "no"
     },
     {
         "x": 6,
@@ -53,91 +53,91 @@
         "y": 5,
         "type": "exit",
         "phrase": "T",
-        "correct": "//"
+        "correct": "no"
     },
     {
         "x": 1,
         "y": 5,
         "type": "phrase",
         "phrase": "Two_or three",
-        "correct": "/w/"
+        "correct": "/ w /"
     },
     {
         "x": 2,
         "y": 5,
         "type": "phrase",
         "phrase": "Three_and a half",
-        "correct": "/j/"
+        "correct": "/ j /"
     },
     {
         "x": 3,
         "y": 5,
         "type": "phrase",
         "phrase": "Draw_a line",
-        "correct": "/r/"
+        "correct": "/ r /"
     },
     {
         "x": 4,
         "y": 5,
         "type": "phrase",
         "phrase": "We saw_a film",
-        "correct": "/r/"
+        "correct": "/ r /"
     },
     {
         "x": 5,
         "y": 5,
         "type": "phrase",
         "phrase": "A queue_of people",
-        "correct": "/w/"
+        "correct": "/ w /"
     },
     {
         "x": 6,
         "y": 5,
         "type": "exit",
         "phrase": "F",
-        "correct": "F"
+        "correct": "no"
     },
     {
         "x": 0,
         "y": 4,
         "type": "exit",
         "phrase": "S",
-        "correct": "S"
+        "correct": "no"
     },
     {
         "x": 1,
         "y": 4,
         "type": "phrase",
         "phrase": "We_aren't ready",
-        "correct": "/j/"
+        "correct": "/ j /"
     },
     {
         "x": 2,
         "y": 4,
         "type": "phrase",
         "phrase": "Tea_or coffee?",
-        "correct": "/j/"
+        "correct": "/ j /"
     },
     {
         "x": 3,
         "y": 4,
         "type": "phrase",
-        "phrase": "Hello_everyone",
-        "correct": "/w/"
+        "phrase": "Hello_ everyone",
+        "correct": "/ w /"
     },
     {
         "x": 4,
         "y": 4,
         "type": "phrase",
         "phrase": "I_agree",
-        "correct": "/j/"
+        "correct": "/ j /"
     },
     {
         "x": 5,
         "y": 4,
         "type": "phrase",
         "phrase": "Where_are you?",
-        "correct": "/r/"
+        "correct": "/ r /"
     },
     {
         "x": 6,
@@ -158,14 +158,14 @@
         "y": 3,
         "type": "phrase",
         "phrase": "Go_ahead",
-        "correct": "/w/"
+        "correct": "/ w /"
     },
     {
         "x": 2,
         "y": 3,
         "type": "phrase",
         "phrase": "True_or false?",
-        "correct": "/w/"
+        "correct": "/ w /"
     },
     {
         "x": 3,
@@ -179,119 +179,119 @@
         "y": 3,
         "type": "phrase",
         "phrase": "Never_again",
-        "correct": "/r/"
+        "correct": "/ r /"
     },
     {
         "x": 5,
         "y": 3,
         "type": "phrase",
         "phrase": "Blue_eyes",
-        "correct": "/w/"
+        "correct": "/ w /"
     },
     {
         "x": 6,
         "y": 3,
         "type": "exit",
         "phrase": "H",
-        "correct": "H"
+        "correct": "no"
     },
     {
         "x": 0,
         "y": 2,
         "type": "exit",
         "phrase": "Q",
-        "correct": "Q"
+        "correct": "yes"
     },
     {
         "x": 1,
         "y": 2,
         "type": "phrase",
         "phrase": "Score_a goal",
-        "correct": "/r/"
+        "correct": "/ r /"
     },
     {
         "x": 2,
         "y": 2,
         "type": "phrase",
         "phrase": "Answer_a question",
-        "correct": "/r/"
+        "correct": "/ r /"
     },
     {
         "x": 3,
         "y": 2,
         "type": "phrase",
         "phrase": "Give me_a ring",
-        "correct": "/j/"
+        "correct": "/ j /"
     },
     {
         "x": 4,
         "y": 2,
         "type": "phrase",
         "phrase": "Try_again",
-        "correct": "/j/"
+        "correct": "/ j /"
     },
     {
         "x": 5,
         "y": 2,
         "type": "phrase",
         "phrase": "Go to_England",
-        "correct": "/w/"
+        "correct": "/ w /"
     },
     {
         "x": 6,
         "y": 2,
         "type": "exit",
         "phrase": "I",
-        "correct": "I"
+        "correct": "no"
     },
     {
         "x": 0,
         "y": 1,
         "type": "exit",
         "phrase": "P",
-        "correct": "P"
+        "correct": "no"
     },
     {
         "x": 1,
         "y": 1,
         "type": "phrase",
         "phrase": "Day_and night",
-        "correct": "/j/"
+        "correct": "/ j /"
     },
     {
         "x": 2,
         "y": 1,
         "type": "phrase",
         "phrase": "She_arrived",
-        "correct": "/j/"
+        "correct": "/ j /"
     },
     {
         "x": 3,
         "y": 1,
         "type": "phrase",
         "phrase": "Four_and a half",
-        "correct": "/r/"
+        "correct": "/ r /"
     },
     {
         "x": 4,
         "y": 1,
         "type": "phrase",
         "phrase": "A few_apples",
-        "correct": "/w/"
+        "correct": "/ w /"
     },
     {
         "x": 5,
         "y": 1,
         "type": "phrase",
         "phrase": "Law_and order",
-        "correct": "/r/"
+        "correct": "/ r /"
     },
     {
         "x": 6,
         "y": 1,
         "type": "exit",
         "phrase": "J",
-        "correct": "J"
+        "correct": "no"
     },
     {
         "x": 0,
@@ -305,35 +305,35 @@
         "y": 0,
         "type": "exit",
         "phrase": "O",
-        "correct": "O"
+        "correct": "no"
     },
     {
         "x": 2,
         "y": 0,
         "type": "exit",
         "phrase": "N",
-        "correct": "N"
+        "correct": "no"
     },
     {
         "x": 3,
         "y": 0,
         "type": "exit",
         "phrase": "M",
-        "correct": "M"
+        "correct": "no"
     },
     {
         "x": 4,
         "y": 0,
         "type": "exit",
         "phrase": "L",
-        "correct": "L"
+        "correct": "no"
     },
     {
         "x": 5,
         "y": 0,
         "type": "exit",
         "phrase": "K",
-        "correct": "K"
+        "correct": "no"
     },
     {
         "x": 6,

@@ -1,9 +1,10 @@
+$wall-color: lightgray;
+$visited: lightgreen;
+$error: pink;
 $border-style: 0.2em solid black;
 $start-border-style: 0.5em solid black;
 $player-border-style: 0.2em solid rgba(255, 0, 0, 0.4);
-$wall-color: lightgray;
 $counter-percent: 0.1;
-$visited: lightgreen;
 
 .App {
     width: 100vw;
@@ -12,6 +13,10 @@ $visited: lightgreen;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .board {
@@ -66,12 +71,16 @@ $visited: lightgreen;
     &__visited {
         background-color: $visited;
     }
+    &__error {
+        background-color: $error;
+    }
     &__other-tile {
         display: flex;
         justify-content: center;
         align-items: center;
         font-weight: 900;
         &--start {
+            background-color: $visited;
             border-bottom: $start-border-style;
             border-left: $start-border-style;
             border-right: $start-border-style;

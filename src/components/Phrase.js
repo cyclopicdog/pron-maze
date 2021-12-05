@@ -1,16 +1,36 @@
 import { useEffect } from 'react';
 
-export default function Phrase({ tile, tileNo, counterX, counterY }) {
+export default function Phrase({
+    tile,
+    tileNo,
+    counterX,
+    counterY,
+    errors,
+    errorToggle,
+}) {
     const backgroundColor = () => {
         const thisTile = document.getElementById(`${tileNo}`);
-        console.log(tileNo);
         tile.x === counterX &&
             tile.y === counterY &&
             thisTile.classList.add('board__visited');
     };
+
     useEffect(() => {
         backgroundColor();
     }, [counterX, counterY]);
+
+    const showError = () =>
+        errors.map((error) => {
+            const thisTile = document.getElementById(`${tileNo}`);
+            if (error.x === tile.x && error.y === tile.y) {
+                thisTile.classList.remove('board__visited');
+                thisTile.classList.add('board__error');
+            }
+        });
+
+    useEffect(() => {
+        showError();
+    }, [errorToggle]);
 
     return (
         <div className="board__tile" id={tileNo}>
