@@ -3,10 +3,16 @@
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 html {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
 }

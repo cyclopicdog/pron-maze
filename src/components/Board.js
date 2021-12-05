@@ -4,17 +4,21 @@ import Phrase from './Phrase.js';
 import Start from './Start.js';
 import Player from './Player.js';
 
-export default function Board() {
-    const board = document.querySelector('board');
-
+export default function Board({ arrow, counterX, counterY }) {
     return (
         <div className="board">
-            <Player board={board} />
+            <Player arrow={arrow} />
             {tiles.map((tile, i) =>
                 tile.type === 'exit' ? (
-                    <Exit tile={tile} key={i} />
+                    <Exit tile={tile} key={i} tileNo={i} />
                 ) : tile.type === 'phrase' ? (
-                    <Phrase tile={tile} key={i} />
+                    <Phrase
+                        tile={tile}
+                        key={i}
+                        tileNo={i}
+                        counterX={counterX}
+                        counterY={counterY}
+                    />
                 ) : (
                     tile.type === 'start' && <Start tile={tile} key={i} />
                 )
