@@ -144,14 +144,14 @@
         "y": 4,
         "type": "exit",
         "phrase": "G",
-        "correct": "G"
+        "correct": "no"
     },
     {
         "x": 0,
         "y": 3,
         "type": "exit",
         "phrase": "R",
-        "correct": "R"
+        "correct": "no"
     },
     {
         "x": 1,

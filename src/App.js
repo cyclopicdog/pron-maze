@@ -20,101 +20,116 @@ function App() {
     const [down, setDown] = useState('');
     const [path, setPath] = useState([]);
     const [errors, setErrors] = useState([]);
-    const [errorToggle, setErrorToggle] = useState('off');
+    const [errorToggle, setErrorToggle] = useState('on');
 
     const setCounter = (dir) => {
-        const pathData = path;
+        if (counterX > 0 && counterX < 6 && counterY > 0 && counterY < 6) {
+            errorToggle === 'on' ? setErrorToggle('off') : setErrorToggle('on');
+            const pathData = path;
 
-        if (counterX === 3 && counterY === 3) {
-            if (dir === 'ArrowUp') {
-                setArrow('\u2B9D');
-                setCounterY(counterY + 1);
-                setArrowTop(arrowTop - 18);
-                setUp('/ w /');
-                setLeft('/ j /');
-                setRight('/ r /');
-                setDown('');
-            }
-        } else {
-            if (dir === 'ArrowUp') {
-                if (counterX !== 3 || (counterX === 3 && counterY + 1 !== 3)) {
-                    const newPathData = [
-                        ...pathData,
-                        {
-                            x: counterX,
-                            y: counterY,
-                            chosen: up,
-                        },
-                    ];
+            if (counterX === 3 && counterY === 3) {
+                if (dir === 'ArrowUp') {
                     setArrow('\u2B9D');
                     setCounterY(counterY + 1);
                     setArrowTop(arrowTop - 18);
                     setUp('/ w /');
                     setLeft('/ j /');
                     setRight('/ r /');
-                    setDown('\u2B9F');
-                    setPath(newPathData);
+                    setDown('');
                 }
-            }
-            if (dir === 'ArrowDown') {
-                if (counterX !== 3 || (counterX === 3 && counterY - 1 !== 3)) {
-                    const newPathData = [
-                        ...pathData,
-                        {
-                            x: counterX,
-                            y: counterY,
-                            chosen: down,
-                        },
-                    ];
-                    setArrow('\u2B9F');
-                    setCounterY(counterY - 1);
-                    setArrowTop(arrowTop + 18);
-                    setUp('\u2B9D');
-                    setLeft('/ r /');
-                    setRight('/ j /');
-                    setDown('/ w /');
-                    setPath(newPathData);
+            } else {
+                if (dir === 'ArrowUp' && up !== '') {
+                    if (
+                        counterX !== 3 ||
+                        (counterX === 3 && counterY + 1 !== 3)
+                    ) {
+                        const newPathData = [
+                            ...pathData,
+                            {
+                                x: counterX,
+                                y: counterY,
+                                chosen: up,
+                            },
+                        ];
+                        setArrow('\u2B9D');
+                        setCounterY(counterY + 1);
+                        setArrowTop(arrowTop - 18);
+                        setUp('/ w /');
+                        setLeft('/ j /');
+                        setRight('/ r /');
+                        setDown('');
+                        setPath(newPathData);
+                    }
                 }
-            }
+                if (dir === 'ArrowDown' && down !== '') {
+                    if (
+                        counterX !== 3 ||
+                        (counterX === 3 && counterY - 1 !== 3)
+                    ) {
+                        const newPathData = [
+                            ...pathData,
+                            {
+                                x: counterX,
+                                y: counterY,
+                                chosen: down,
+                            },
+                        ];
+                        setArrow('\u2B9F');
+                        setCounterY(counterY - 1);
+                        setArrowTop(arrowTop + 18);
+                        setUp('');
+                        setLeft('/ r /');
+                        setRight('/ j /');
+                        setDown('/ w /');
+                        setPath(newPathData);
+                    }
+                }
 
-            if (dir === 'ArrowLeft') {
-                if (counterY !== 3 || (counterY === 3 && counterX - 1 !== 3)) {
-                    const newPathData = [
-                        ...pathData,
-                        {
-                            x: counterX,
-                            y: counterY,
-                            chosen: left,
-                        },
-                    ];
-                    setArrow('\u2B9C');
-                    setCounterX(counterX - 1);
-                    setArrowLeft(arrowLeft - 18);
-                    setUp('/ r /');
-                    setLeft('/ w /');
-                    setRight('\u2B9E');
-                    setDown('/ j /');
-                    setPath(newPathData);
+                if (dir === 'ArrowLeft' && left !== '') {
+                    if (
+                        counterY !== 3 ||
+                        (counterY === 3 && counterX - 1 !== 3)
+                    ) {
+                        const newPathData = [
+                            ...pathData,
+                            {
+                                x: counterX,
+                                y: counterY,
+                                chosen: left,
+                            },
+                        ];
+                        setArrow('\u2B9C');
+                        setCounterX(counterX - 1);
+                        setArrowLeft(arrowLeft - 18);
+                        setUp('/ r /');
+                        setLeft('/ w /');
+                        setRight('');
+                        setDown('/ j /');
+                        setPath(newPathData);
+                    }
                 }
-            }
-            if (dir === 'ArrowRight') {
-                if (counterY !== 3 || (counterY === 3 && counterX + 1 !== 3)) {
-                    const newPathData = [
-                        ...pathData,
-                        {
-                            x: counterX,
-                            y: counterY,
-                            chosen: right,
-                        },
-                    ];
-                    setArrow('\u2B9E');
-                    setCounterX(counterX + 1);
-                    setArrowLeft(arrowLeft + 18);
-                    setUp('/ j /');
-                    setLeft('\u2B9C');
-                    setRight('/ w /');
-                    setDown('/ r /');
-                    setPath(newPathData);
+                if (dir === 'ArrowRight' && right !== '') {
+                    if (
+                        counterY !== 3 ||
+                        (counterY === 3 && counterX + 1 !== 3)
+                    ) {
+                        const newPathData = [
+                            ...pathData,
+                            {
+                                x: counterX,
+                                y: counterY,
+                                chosen: right,
+                            },
+                        ];
+                        setArrow('\u2B9E');
+                        setCounterX(counterX + 1);
+                        setArrowLeft(arrowLeft + 18);
+                        setUp('/ j /');
+                        setLeft('');
+                        setRight('/ w /');
+                        setDown('/ r /');
+                        setPath(newPathData);
+                    }
                 }
             }
         }
@@ -128,6 +143,15 @@ function App() {
         counterX === 4 && counterY === 3 && setLeft('');
         counterX === 3 && counterY === 2 && setUp('');
         counterX === 3 && counterY === 4 && setDown('');
+        checkPath();
+        if (
+            counterX === 0 ||
+            counterX === 6 ||
+            counterY === 0 ||
+            counterY === 6
+        ) {
+            checkFinish();
+        }
     }, [arrowTop, arrowLeft]);
 
     const checkPath = () => {
@@ -161,8 +185,49 @@ function App() {
         }
     };
 
-    console.log('App errorToggle:', errorToggle);
-    console.log('errors:', errors);
+    // console.log('App errorToggle:', errorToggle);
+    // console.log('errors:', errors);
+    const checkFinish = () => {
+        tiles.map((tile) => {
+            if (
+                tile.x === counterX &&
+                tile.y === counterY &&
+                tile.correct === 'yes'
+            ) {
+                errorToggle === 'on' && setErrorToggle('off');
+                checkPath();
+                checkResult();
+            }
+            if (
+                tile.x === counterX &&
+                tile.y === counterY &&
+                tile.correct === 'no'
+            ) {
+                console.log('result: Sorry bozo, bad exit!');
+
+                return (
+                    <div className="results">
+                        Sorry, that's the wrong exit - try again!
+                    </div>
+                );
+            }
+        });
+    };
+
+    const checkResult = () => {
+        if (errors === []) {
+            console.log('result: You got there - well done!');
+            return <div className="results">You got there - well done!</div>;
+        } else {
+            console.log('result: Sorry bozo!');
+
+            return (
+                <div className="results">
+                    Sorry, you didn't get it all right - try again!
+                </div>
+            );
+        }
+    };
 
     return (
         <div className="App">
@@ -177,6 +242,7 @@ function App() {
                 errorToggle={errorToggle}
             />
             <div className="sidebar">
+                <Instructions />
                 <Controller
                     setCounter={setCounter}
                     up={up}
@@ -184,9 +250,17 @@ function App() {
                     left={left}
                     down={down}
                 />
-                <Instructions />
-                <button className="sidebar__button" onClick={checkPath}>
-                    show mistakes
+                <button
+                    className="sidebar__button sidebar__button--show-errors"
+                    onClick={checkPath}
+                >
+                    show mistakes: {errorToggle}
+                </button>
+                <button
+                    className="sidebar__button"
+                    onClick={() => window.location.reload(false)}
+                >
+                    start again
                 </button>
             </div>
         </div>

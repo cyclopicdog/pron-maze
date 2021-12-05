@@ -41,8 +41,6 @@ export default function Phrase({
         showError();
     }, [errorToggle]);
 
-    console.log('Phrase errorToggle:', errorToggle);
-
     return (
         <div className="board__tile" id={tileNo}>
             <div className="board__empty-ninth board__empty-ninth--top-left"></div>
